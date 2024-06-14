@@ -125,7 +125,7 @@ limit 1;
 # 25.Знайти кредити, сума яких більша за середнє значення усіх кредитів
 select *
 from application
-where Sum > (Select avg(Sum) from application)
+where Sum > (Select avg(Sum) from application);
 # 26. Знайти клієнтів, які є з того самого міста, що і клієнт, який взяв найбільшу кількість кредитів
 select *
 from client
